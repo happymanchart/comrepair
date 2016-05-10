@@ -1,0 +1,25 @@
+<?php
+
+use yii\helpers\Html;
+
+/* @var $this yii\web\View */
+/* @var $model app\models\Repairs */
+
+$this->title = 'Create Repairs';
+$this->params['breadcrumbs'][] = ['label' => 'Repairs', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
+?>
+<div class="repairs-create">
+
+<!--    <h1><?= Html::encode($this->title) ?></h1>-->
+    <div class="panel panel-info">
+        <div class="panel-heading">   แจ้งซ่อม</div>
+        <div class="panel-body">
+            <?=
+            $this->render('_form', [
+                'model' => $model,
+            ])
+            ?>
+        </div>
+    </div>
+</div>
